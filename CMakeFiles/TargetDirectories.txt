@@ -1,0 +1,2 @@
+/home/zry/211220126-朱润宇-check1/CMakeFiles/edit_cache.dir
+/home/zry/211220126-朱润宇-check1/CMakeFiles/rebuild_cache.dir

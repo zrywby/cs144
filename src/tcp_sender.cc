@@ -248,7 +248,10 @@ void TCPSender::handle_RTO(){
 }
 
 void print(TCPSenderMessage message){
-    std::cout << "Current Sequence Number: " << message.seqno.getuint32_t() << std::endl;
+//    std::cout << "Current Sequence Number: " << message.seqno.getuint32_t() << std::endl;
+//    std::cout << "Current Sequence Number: " << static_cast<uint32_t>(message.seqno) << std::endl;
+  
+  std::cout << "Current Sequence Number: " << message.seqno.get() << std::endl;
     std::cout << "SYN: " << (message.SYN ? "true" : "false") << std::endl;
     std::cout << "payload: " << message.payload << std::endl;
     std::cout << "FIN: " << (message.FIN ? "true" : "false") << std::endl;

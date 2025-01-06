@@ -9,10 +9,8 @@ endmacro(add_app)
 
 add_app(webget)
 add_app(tcp_native)
-<<<<<<< HEAD
 
 
 
-=======
+
 add_app(tcp_ipv4)
->>>>>>> origin/check5-startercode
