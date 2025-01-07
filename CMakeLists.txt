@@ -1,5 +1,4 @@
 cmake_minimum_required(VERSION 3.24.2)
-
 project(minnow CXX)
 
 if(${CMAKE_GENERATOR} STREQUAL "Unix Makefiles")
@@ -24,5 +23,12 @@ add_subdirectory("${PROJECT_SOURCE_DIR}/tests")
 add_subdirectory("${PROJECT_SOURCE_DIR}/apps")
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -w")
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wno-error")
+#set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wno-error")
+#set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wextra")
+#set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wno-cast-qual")
+#set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Werror")
+
+#if(NOT CMAKE_CXX_COMPILER_ID STREQUAL "Clang")
+#	set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wextra")
+#endif()
+#set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wno-unqualified-std-cast-call")
